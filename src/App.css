@@ -1,0 +1,51 @@
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-logo {
+  height: 85px;
+  margin: 1.2rem 0;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.site-logo:hover {
+  transform: translateY(-4px);
+  filter: contrast(1.3);
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotate-slow {
+    animation: rotateIcon 22s linear infinite;
+  }
+}
+
+.card-box {
+  padding: 1.6rem 2rem;
+  background-color: #fafafa;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  width: max-content;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+
+.tip-text {
+  color: #777;
+  font-size: 15px;
+  margin-top: 0.4rem;
+  font-style: italic;
+}
